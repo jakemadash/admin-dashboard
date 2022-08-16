@@ -1,6 +1,7 @@
 body,html {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 * {
     box-sizing: border-box;
@@ -29,5 +30,18 @@ ul, ol, li {
     grid-row: 1/7;
     height: 100%;
     color: white;
-    padding-left: 20px;
+    padding: 20px;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.sidebar::before {
+    content: url(atom.svg);
+    filter: invert(100%);
+    width: 3rem;
+    height: 3rem;
+    display: inline-block;
+    position: absolute;
+    left: 30px;
+    top: 11px;
 }
