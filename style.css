@@ -36,7 +36,7 @@ ul, ol, li {
 }
 
 .sidebar::before {
-    content: url(atom.svg);
+    content: url(admin-dashboard-icons/atom.svg);
     filter: invert(100%);
     width: 3rem;
     height: 3rem;
@@ -49,24 +49,26 @@ ul, ol, li {
 .sidebar-body {
     display: grid;
     grid-template-columns: 1fr 6fr;
-    gap: 30px;
+    gap: 20px;
     font-size: 1.3rem;
-    margin: 50px 10px;
+    margin: 50px 22px;
 }
 
-.sidebar-icons {
+
+.sidebar-icons > * {
     justify-self: end;
+    filter: invert(100%);
+    height: 1.3rem;
+    width: 1.3rem;
+}
+
+.sidebar-icons, .sidebar-actions {
+    display: grid;
+    grid-template-columns: min-content;
+    gap: 20px;
 }
 
 .sidebar-actions {
-    justify-self: start;
     text-align: left;
 }
 
-.sidebar-actions > *, .sidebar-icons > * {
-    margin: 20px 0px;
-}
-
-.sidebar-actions > :nth-child(6), .sidebar-icons > :nth-child(6) {
-    margin-bottom: 80px;
-}
