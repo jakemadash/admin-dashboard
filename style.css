@@ -45,3 +45,28 @@ ul, ol, li {
     left: 30px;
     top: 11px;
 }
+
+.sidebar-body {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    gap: 30px;
+    font-size: 1.3rem;
+    margin: 50px 10px;
+}
+
+.sidebar-icons {
+    justify-self: end;
+}
+
+.sidebar-actions {
+    justify-self: start;
+    text-align: left;
+}
+
+.sidebar-actions > *, .sidebar-icons > * {
+    margin: 20px 0px;
+}
+
+.sidebar-actions > :nth-child(6), .sidebar-icons > :nth-child(6) {
+    margin-bottom: 80px;
+}
