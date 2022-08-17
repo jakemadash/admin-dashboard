@@ -72,3 +72,6 @@ ul, ol, li {
     text-align: left;
 }
 
+.sidebar-actions > :nth-child(6), .sidebar-icons > :nth-child(6) {
+    grid-row: 6/11;
+}
