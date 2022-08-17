@@ -73,5 +73,5 @@ ul, ol, li {
 }
 
 .sidebar-actions > :nth-child(6), .sidebar-icons > :nth-child(6) {
-    grid-row: 6/11;
+    margin-bottom: 50px;
 }
