@@ -126,4 +126,26 @@ img+div {
     background-color: buttonface;
 }
 
+.wassup > img {
+    height: 4.5rem;
+    margin-left: -25px;
+    position: absolute;
+    top: 85px;
+}
 
+#wassup {
+    margin-left: 65px;
+    font-size: .8rem;
+}
+
+#skylar {
+    margin-left: 60px;
+    font-size: 2.3rem;
+}
+
+.skylar {
+    display: grid;
+    grid-template-columns: 1fr;
+    position: absolute;
+    top: 100px;
+}
