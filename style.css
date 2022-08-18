@@ -25,7 +25,7 @@ button {
 
 input {
     border-radius: 50px;
-    width: 500px;
+    width: 750px;
     height: 2rem;
     background-color: buttonface;
 }
@@ -54,10 +54,6 @@ img+div {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     height: 100vh;
-}
-
-.announcements, .trending {
-    grid-column: 3;
 }
 
 .sidebar {
@@ -124,6 +120,7 @@ img+div {
     grid-template-rows: repeat(3, min-content);
     gap: 10px;
     margin: 20px 80px;
+    padding-bottom: 10px;
     font-weight: 700;
 }
 
@@ -172,4 +169,33 @@ img+div {
     align-self: end;
     position: absolute;
     top: 130px;
+}
+
+.main {
+    grid-row: 2/7;
+    grid-column: 2/4;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 6fr 2fr;
+    padding: 0px 30px;
+    align-items: start;
+    justify-content: center;
+}
+
+.cards {
+    grid-row: 2/7;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, repeat(20px, 1fr));
+}
+
+.card {
+    border-style: solid;
+}
+
+.announcements {
+    grid-row: 1/4;
+}
+
+.trending {
+    grid-row: 4/7;
 }
