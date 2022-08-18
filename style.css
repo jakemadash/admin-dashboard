@@ -13,8 +13,14 @@ ul, ol, li {
 }
 
 button {
-    width: 7rem;
+    width: 6rem;
+    height: 2rem;
     border-radius: 50px;
+    background-color: rgb(21, 73, 127);
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
 }
 
 input {
@@ -62,6 +68,7 @@ img+div {
     padding: 20px;
     font-size: 1.8rem;
     text-align: center;
+    position: relative;
 }
 
 .sidebar::before {
@@ -105,10 +112,16 @@ img+div {
     margin-bottom: 50px;
 }
 
+.header-container {
+    grid-column: 2/4;
+    box-shadow: 5px 5px 5px rgb(209, 207, 207);
+}
+
 .header {
     grid-column: 2/4;
     display: grid;
     grid-template-columns: 3fr 2fr;
+    grid-template-rows: repeat(3, min-content);
     gap: 10px;
     margin: 20px 80px;
     font-weight: 700;
@@ -124,6 +137,7 @@ img+div {
 
 .main, .announcements, .trending {
     background-color: buttonface;
+    z-index: -1;
 }
 
 .wassup > img {
@@ -148,4 +162,14 @@ img+div {
     grid-template-columns: 1fr;
     position: absolute;
     top: 100px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-self: end;
+    align-self: end;
+    position: absolute;
+    top: 130px;
 }
