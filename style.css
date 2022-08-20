@@ -12,6 +12,14 @@ ul, ol, li {
     list-style: none;
 }
 
+h3, p {
+    margin: 0;
+}
+
+p {
+    color: gray;
+}
+
 button {
     width: 6rem;
     height: 2rem;
@@ -200,6 +208,10 @@ img+div {
     border-color: rgb(214, 194, 46);
     border-radius: 10px;
     box-shadow: 2px 2px 2px rgb(209, 207, 207);
+    padding: 20px 20px 8px;
+    display: grid;
+    gap: 10px;
+    grid-template-rows: min-content;
 }
 
 .announcements {
@@ -210,4 +222,13 @@ img+div {
 .trending {
     grid-row: 4/7;
     grid-column: 2/3;
+}
+
+.card-icons {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: 100%;
+    justify-content: end;
+    align-items: end;
+    gap: 18px;
 }
