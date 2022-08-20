@@ -12,7 +12,7 @@ ul, ol, li {
     list-style: none;
 }
 
-h3, h4, p {
+h3, h4, h5, p {
     margin: 0;
 }
 
@@ -202,7 +202,7 @@ img+div {
 }
 
 .card {
-    height: 14rem;
+    height: 15rem;
     background-color: white;
     border-left: -2px;
     border-left-style: solid;
@@ -219,13 +219,6 @@ img+div {
 .announcements {
     grid-row: 1/4;
     grid-column: 2/3;
-}
-
-.trending {
-    grid-row: 4/7;
-    grid-column: 2/3;
-    align-self: start;
-    margin-top: -70px;
 }
 
 .card-icons {
@@ -262,3 +255,32 @@ img+div {
     font-size: .9rem;
     margin-top: 4px;
 }
+
+.trending {
+    grid-row: 4/7;
+    grid-column: 2/3;
+    align-self: start;
+    margin-top: -20px;
+    z-index: -1;
+}
+
+.trending-card {
+    height: 7.5rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgb(209, 207, 207);
+    padding: 15px;
+    display: grid;
+    grid-template-rows: min-content min-content;
+    grid-template-columns: min-content 1fr;
+    gap: 20px 10px;
+}
+
+.trending-card img {
+    height: 2.5rem;
+}
+
+.trending-card p {
+    font-size: .9rem;
+}
+
